@@ -1,0 +1,57 @@
+<head>
+<style>
+img {
+  width: 200;
+  height: 200;
+  border: 3px solid black;
+}
+</style>
+</head>
+
+<body style = "background-color: black;">
+
+<h1 id="print" style = "color: white;"></h1>
+<p id="printParagraph">Tests</p>
+<script>
+var family = [
+"images/image1.jpg",
+"images/image2.jpg",
+"images/image3.jpg",
+"images/image4.jpg",
+"images/image5.jpg",
+"images/image6.jpg",
+"images/image7.jpg",
+"images/image8.jpg",
+"images/image9.jpg",
+"images/image10.jpg",
+"images/image11.jpg",
+"images/image12.jpg",
+"images/image13.jpg",
+"images/image14.jpg",
+"images/image15.jpg",
+"images/image16.jpg",
+"images/image17.jpg",
+"images/image18.jpg",
+"images/image19.jpg",
+"images/image20.jpg",
+"images/image21.jpg",
+"images/image22.jpg",
+"images/image23.jpg"
+]
+console.log(family);
+family.sort(function(a, b){return 0.5 - Math.random()});
+console.log(family.indexOf('images/image1.jpg'));
+
+
+var i = 0;
+var txt = "";
+//var txt = "<ul>";
+for (i < 0; i < family.length; i++){
+ txt += '<img src="' + family[i] + '"/>'
+}
+//txt += "</ul>";
+ document.getElementById("print").innerHTML = txt;
+ //document.getElementById("printParagraph").innerHTML = family;
+
+</script>
+</body>
