@@ -53,6 +53,7 @@ h2 {
 </div>
 </div>
 <script>
+var txt = "";
 var family = [
 "image1.jpg",
 "image3.jpg",
@@ -68,20 +69,16 @@ var family = [
 "image23.jpg",
 "image24.jpg",
 "image25.jpg",
-"image26.jpg",
+"image26.jpg"
 ]
 console.log(family);
 family.sort(function(a, b){return 0.5 - Math.random()});
+family.forEach(myFunction);
+document.getElementById("print").innerHTML = txt;
 
-var i = 0;
-var txt = "";
-//var txt = "<ul>";
-for (i < 0; i < family.length; i++){
- txt += '<img src="' + family[i] + '"/>'
+function myFunction(value) {
+  txt += '<img src="' + value + '"/>'
 }
-//txt += "</ul>";
- document.getElementById("print").innerHTML = txt;
- //document.getElementById("printParagraph").innerHTML = family;
 </script>
 </body>
 </html>
