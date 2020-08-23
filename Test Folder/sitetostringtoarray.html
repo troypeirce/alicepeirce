@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="easyblogging.css"/>
+
+</head>
+<body>
+<!-- Main Content Section-->
+<div class="row">
+<div class="column">
+<div class="article">
+<img class="logoImage" src="images/header.jpg" alt="Easy Blogging">
+<!-- Navbar -->
+<nav>
+<ul class="nav1">
+  <li class="nav"><a href="index.html" class="active">Easy Blogging</a></li>
+  <li class="nav"><a href="bloggingbasics.html">Blogging Basics</a></li>
+  <li class="nav"><a href="blogforprofit.html">Blog For Profit</a></li>
+  <li class="nav"><a href="blogpoststhatsell.html">Blog Posts That Sell</a></li>
+  <li class="nav"><a href="bloggingsuccess.html">Blogging Success</a></li>
+  <li class="nav"><a href="blogoperations.html">Blog Operations</a></li>
+  <li class="nav"><a href="yourownonlinemagazine.html">Online Magazine</a></li>
+  <li class="nav"><a href="authorityblogsuccess.html">Authority Blog</a></li>
+  <li class="nav"><a href="100blogcommentingtactics.html">100 Blog Commenting 
+  Tactics</a></li>
+</ul>
+</nav>
+<h1>Easy Blogging Newsletter</h1>
+  <!-- Easy Blogging Logo Image -->
+  <a href="easyblogging.html">
+  <img class="logoImagebody" 
+  src="images/easyblogginglogoimage.jpg" 
+  alt="Easy Blogging Logo Image"
+    width="150" height="169"/>
+  </a>
+
+<!-- Product Copy-->
+<p id="replaceWill" class="floatLeftParagraph"><span class="firstLetter">T</span>he Easy Blogging Newsletter will provide you with proven, effective 
+information, tips and advice that will help you start and manage your own 
+successful blog.<br><br>
+
+Inside each issue of the Easy Blogging Newsletter, you will receive easy 
+to understand information that will help you create great content, get more 
+readers, market your blog and get it listed in the search engines, so that you can 
+get more visitors.</p><br>
+
+<script>
+  var str = document.getElementById("replaceWill").innerHTML;
+  var arr = str.split(",");
+  var text = "";
+  arr[0] = "This is first in the array";
+  arr[1] = "Second in the array";
+  arr[2] = "Third in the array";	
+  arr[3] = "Fourth in the array";
+  arr[4] = "Fifth in the array";
+  arr[5] = "Sixth in the array"; 
+  arr[6] = "Seventh in the array";
+  var i;
+  for (i=0; i < arr.length; i++){
+    text += arr[i] + "<br><br>"
+  }
+  document.getElementById("replaceWill").innerHTML = text;
+  console.log(arr);
+
+</script>
+</body>
+</html>
+
+
