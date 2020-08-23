@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>ALICE PEIRCE</title>
+<meta charset="utf-8"/>
+<meta name="description" content="Alice Peirce's Photo Gallery"/>
+<meta property="og:image" content="images/aliceface.jpg" />
+<link rel="shortcut icon" href="images/aliceface.jpg"/>
+<meta name="keywords" content="Alice Peirce"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Troy Peirce"/>
+<link rel="stylesheet" href="css/alicepeirce.css"/>
+</head>
+<body style = "background-color: black;">
+<header><h2>ALICE PEIRCE</h2></header>
+<div class="row">
+<div class="column">
+<!--<h1 id="print" style = "color: white;"></h1>-->
+<div id="print" class="thumbnails"></div>
+</div>
+</div>
+<script>
+var txt = "";
+var family = [
+"images/image1.jpg",
+"images/image3.jpg",
+"images/image12.jpg",
+"images/image19.jpg",
+"images/image21.jpg",
+"images/image22.jpg",
+"images/image23.jpg",
+"images/image24.jpg",
+"images/image25.jpg",
+"images/image26.jpg",
+"images/image30.jpg",
+"images/image31.jpg",
+"images/image32.jpg",
+"images/image34.JPG",
+"images/image35.jpg",
+"images/image36.JPG",  
+"images/image37.JPG",  
+"images/image38.JPG",  
+"images/image39.JPG",  
+"images/image40.PNG",  
+"images/image41.jpg",  
+"images/image42.jpg"  
+]
+console.log(family);
+family.sort(function(a, b){return 0.5 - Math.random()});
+family.forEach(myFunction);
+document.getElementById("print").innerHTML = txt;
+
+function myFunction(value) {
+  txt += '<a href="' + value + '"><img src="' + value + '"/></a>'
+}
+</script>
+</body>
+</html>
+
+
