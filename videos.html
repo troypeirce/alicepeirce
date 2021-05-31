@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>ALICE PEIRCE</title>
+<meta charset="utf-8"/>
+<meta name="description" content="Alice Peirce's Photo Gallery"/>
+<meta property="og:image" content="aliceface.jpg" />
+<link rel="shortcut icon" href="aliceface.jpg"/>
+<meta name="keywords" content="Alice Peirce"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Troy Peirce"/>
+<style>
+img {
+  width: 200px;
+  height: 266px;
+  border: 3px solid black;
+  
+}
+
+.thumbnails {
+  text-align: center;
+}
+
+.column {
+  padding: 30px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ 
+ header {
+  padding: 30px;
+  margin:auto;
+  font-size: 35px;
+  color: white;
+  background-image:url('linetextureretroabstractartheader.jpg');
+  text-shadow: 3px 2px black;
+}
+
+h2 {
+  text-align: center;
+}
+
+.row {background-image:url('bodybackgroundimage.jpg');}
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+
+li a {
+	display:block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+
+
+.nav1 a:hover {background-color: #111111; border-radius: 50px 20px;}
+
+.nav1 a.active {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+</style>
+</head>
+<body style = "background-color: black;">
+<header><h2>ALICE PEIRCE</h2></header>
+<div class="row">
+<ul class="nav">
+  <li class="nav1"><a href="index.html">ARRAY OF IMAGES</a></li>
+  <li class="nav1"><a href="videos.html" class="active">ARRAY OF VIDEOS</a></li>
+</ul>
+<div class="column">
+<!--<h1 id="print" style = "color: white;"></h1>-->
+<div id="print" class="thumbnails"></div>
+</div>
+</div>
+<script>
+var txt = "";
+var family = [
+"video1.mp4",  
+"video2.mov",
+"video3.mov"
+]
+console.log(family);
+family.sort(function(a, b){return 0.5 - Math.random()});
+family.forEach(myFunction);
+document.getElementById("print").innerHTML = txt;
+
+function myFunction(value) {
+  txt += '<video width="200" controls autoplay><source src="' + value + '" type="video/mp4"></video>'
+}
+</script>
+</body>
+</html>
