@@ -3,7 +3,8 @@
 ========================================== */
 
 
-let currentAlbum = Object.keys(albums)[0];
+const albumNames = Object.keys(albums);
+let currentAlbum = albumNames[albumNames.length - 1];
 let currentIndex = 0;
 let playing = false;
 let interval = null;
