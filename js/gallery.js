@@ -7,6 +7,11 @@ let currentAlbum = "Prior to March 2026";
 let currentIndex = 0;
 let playing = false;
 let interval = null;
+// Touch swipe support
+let touchStartX = 0;
+let touchEndX = 0;
+
+const SWIPE_DISTANCE = 60;
 
 // DOM elements
 const photo = document.getElementById("photo");
@@ -294,5 +299,45 @@ overlay.onclick = ()=>{
     albumMenu.classList.remove("show");
 
     overlay.classList.remove("show");
+
+}
+
+/* ==========================================
+   TOUCH SWIPE SUPPORT
+========================================== */
+
+const viewer = document.getElementById("viewer");
+
+viewer.addEventListener("touchstart", (e) => {
+
+    touchStartX = e.changedTouches[0].screenX;
+
+}, { passive: true });
+
+viewer.addEventListener("touchend", (e) => {
+
+    touchEndX = e.changedTouches[0].screenX;
+
+    handleSwipe();
+
+}, { passive: true });
+
+function handleSwipe() {
+
+    const distance = touchEndX - touchStartX;
+
+    // Swipe Left
+    if (distance < -SWIPE_DISTANCE) {
+
+        nextPhoto();
+
+    }
+
+    // Swipe Right
+    else if (distance > SWIPE_DISTANCE) {
+
+        prevPhoto();
+
+    }
 
 }
