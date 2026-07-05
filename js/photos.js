@@ -200,21 +200,24 @@ const albums = {
     "March 2026": [],
     "April 2026": [], */
     "June 2026": [
-		"images/image252.jpg",
-		"images/image253.jpg",
-		"images/image254.jpg",
-		"images/image255.jpg",
-		"images/image256.jpg",
-		"images/image257.jpg",
 		"images/image258.jpg",
 		"images/image259.jpg",
 		"images/image260.jpg",
-		"images/image261.jpg",
+		"images/image257.jpg",
+		"images/image261.jpg",	
+		"images/image255.jpg",
+		"images/image256.jpg",
+		"images/image252.jpg",
+		"images/image253.jpg",
+		"images/image254.jpg",
 		"images/image267.jpg",
 		"images/image268.jpg",
 		"images/image269.jpg",
 		"images/image270.jpg",
-		"images/image271.jpg"
+		"images/image274.jpg",
+		"images/image275.jpg",
+		"images/image276.jpg",
+		"images/image271.jpg",
 		
 	],
     "July 2026": [
