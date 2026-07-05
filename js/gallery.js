@@ -3,7 +3,7 @@
 ========================================== */
 
 
-let currentAlbum = "Prior to March 2026";
+let currentAlbum = Object.keys(albums)[0];
 let currentIndex = 0;
 let playing = false;
 let interval = null;
