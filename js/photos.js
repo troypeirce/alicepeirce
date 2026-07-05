@@ -7,7 +7,7 @@ const albums = {
 
     "Prior to March 2026": [
 
-        "images/image1.jpg",
+  
         "images/image21.jpg",
         "images/image25.jpg",
         "images/image26.jpg",
