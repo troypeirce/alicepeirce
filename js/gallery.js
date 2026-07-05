@@ -152,13 +152,28 @@ function toggleSlideshow() {
    FULLSCREEN
 ========================================== */
 
-function toggleFullscreen() {
 
-    if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
-    } else {
-        document.exitFullscreen();
+
+async function toggleFullscreen() {
+
+    try {
+
+        if (!document.fullscreenElement) {
+
+            await document.getElementById("viewer").requestFullscreen();
+
+        } else {
+
+            await document.exitFullscreen();
+
+        }
+
+    } catch (err) {
+
+        console.error(err);
+
     }
+
 }
 
 /* ==========================================
