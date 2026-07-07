@@ -1,0 +1,12 @@
+$i=252; Get-ChildItem *.jp* | Sort-Object Name | ForEach-Object { Rename-Item $_ ("image{0}.jpg" -f $i); $i++ }
+
+
+
+
+Get-ChildItem image*.jpg | Sort-Object Name | Where-Object {
+    [int]($_.BaseName -replace 'image','') -ge 276
+} | ForEach-Object {
+    '        "images/{0}",' -f $_.Name
+}
+
+.\ImportPhotos.ps1
