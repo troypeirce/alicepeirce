@@ -10,3 +10,11 @@ Get-ChildItem image*.jpg | Sort-Object Name | Where-Object {
 }
 
 .\ImportPhotos.ps1
+
+
+
+
+
+git add .
+git commit -m "Describe your changes"
+git push
