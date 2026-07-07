@@ -181,37 +181,6 @@ const albums = {
 
 
     "February 2026": [
-		"images/image163.jpg",
-		"images/image164.jpg",
-		"images/image165.jpg",
-		"images/image166.jpg",
-		"images/image167.jpg",
-		"images/image168.jpg",
-		"images/image169.jpg",
-		"images/image170.jpg",
-		"images/image171.jpg",
-		"images/image172.jpg",
-		"images/image173.jpg",
-		"images/image174.jpg",
-		"images/image175.jpg",
-		"images/image176.jpg",
-		"images/image177.jpg",
-		"images/image178.jpg",
-		"images/image179.jpg",
-		"images/image180.jpg",
-		"images/image181.jpg",
-		"images/image182.jpg",
-		"images/image183.jpg",
-		"images/image184.jpg",
-		"images/image185.jpg",
-		"images/image186.jpg",
-		"images/image187.jpg",
-		"images/image188.jpg",
-		"images/image189.jpg",
-		"images/image190.jpg",
-		"images/image191.jpg",
-		"images/image192.jpg",
-		"images/image193.jpg",
-		"images/image194.jpg"
+
     ]
 };
