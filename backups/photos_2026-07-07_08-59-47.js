@@ -4,33 +4,6 @@
 ========================================== */
 
 const albums = {
-
-	    "January 2026": [
-		"images/image195.jpg",
-		"images/image196.jpg",
-		"images/image197.jpg",
-		"images/image198.jpg",
-		"images/image199.jpg",
-		"images/image200.jpg",
-		"images/image201.jpg",
-		"images/image202.jpg",
-		"images/image203.jpg",
-		"images/image204.jpg",
-		"images/image205.jpg",
-		"images/image206.jpg",
-		"images/image207.jpg",
-		"images/image208.jpg",
-		"images/image209.jpg",
-		"images/image210.jpg",
-		"images/image211.jpg",
-		"images/image212.jpg",
-		"images/image213.jpg",
-		"images/image214.jpg",
-		"images/image215.jpg",
-		"images/image216.jpg",
-		"images/image217.jpg"
-    ],
-
 	
 	    "February 2026": [
 		"images/image163.jpg",
@@ -244,4 +217,7 @@ const albums = {
 
 
 
+    "January 2026": [
+
+    ]
 };
