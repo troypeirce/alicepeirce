@@ -12,6 +12,7 @@ Get-ChildItem image*.jpg | Sort-Object Name | Where-Object {
 .\ImportPhotos.ps1
 
 
+HI TROY! HELLO WORLD! 
 
 
 
