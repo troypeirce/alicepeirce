@@ -17,6 +17,7 @@ const albums = {
 		"images/image225.jpg",
 		"images/image226.jpg",
 		"images/image227.jpg",
+		"images/image228.jpg"
     ],
 	    "January 2026": [
 		"images/image195.jpg",

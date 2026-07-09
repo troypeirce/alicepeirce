@@ -7,16 +7,7 @@ const albums = {
 
 
     "December 2025": [
-		"images/image218.jpg",
-		"images/image219.jpg",
-		"images/image220.jpg",
-		"images/image221.jpg",
-		"images/image222.jpg",
-		"images/image223.jpg",
-		"images/image224.jpg",
-		"images/image225.jpg",
-		"images/image226.jpg",
-		"images/image227.jpg",
+
     ],
 	    "January 2026": [
 		"images/image195.jpg",
@@ -252,6 +243,5 @@ const albums = {
 		"images/image160.jpg",
 		"images/image161.jpg",
 		"images/image162.jpg"
-	],	
 
 };
